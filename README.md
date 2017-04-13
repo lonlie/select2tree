@@ -17,6 +17,16 @@ extend select2 for treeview. 扩展select2，使它可以树形展示，可以�
 
 [Посмотреть демо](http://runjs.cn/detail/bezljwvl)
 
+Минимально необходимые файлы для работы плагина:
+
+```
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.6/select2-bootstrap.min.css" rel="stylesheet" />
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+<script src="select2tree.js"></script>
+```
+
 Для инициализации виджета используйте следующий код: 
 
 ```
