@@ -76,10 +76,14 @@
 					$(this).siblings("li[val=" + $this.attr("parent") + "]").find("span:eq(1)").css("font-weight", "bold");
 				}
 				//add gap for children
-				if(!$this.attr("style")) {
-					var paddingLeft = getLevel($this.attr("val")) * 2;
-					$("li[parent='" + $this.attr("parent") + "']").css("padding-left", paddingLeft + "em");
-				}
+				    // if(!$this.attr("style")) {
+				    //   var paddingLeft = getLevel($this.attr("val")) * 2;
+				    //   $("li[parent='" + $this.attr("parent") + "']").css("padding-left", paddingLeft + "em");
+				    // }
+				    if(!$this.attr("style")) {
+				      var paddingLeft = getLevel($this.attr("val")) * 2;
+				      $("li[parent='" + $this.attr("parent") + "']").css("padding-left", paddingLeft + "em").css("display","none");
+				    }
 			});
 
 			//override mousedown for collapse/expand 
