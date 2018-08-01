@@ -69,7 +69,7 @@
 				var $this = $(this);
 				//loop li add some classes and properties
 				if($this.attr("parent")) {
-					$(this).siblings("li[val=" + $this.attr("parent") + "]").find("span:eq(0)").addClass("glyphicon glyphicon-chevron-down switch").css({
+					$(this).siblings("li[val=" + $this.attr("parent") + "]").find("span:eq(0)").addClass("glyphicon glyphicon-chevron-right switch").css({
 						"padding": "0 10px",
 						"cursor": "default"
 					});
