@@ -1,6 +1,7 @@
 <html>
 
 	<head>
+		<title>select2tree 例子Demo</title>
 		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.6/select2-bootstrap.min.css" rel="stylesheet" />
@@ -11,28 +12,70 @@
 	</head>
 
 	<body>
-		<select id="test" style="width: 50%;margin-left: 10%;">
-			<option value="12" parent="1">12</option>
-			<option value="1">1</option>
-			<option value="13" parent="1">13</option>
-			<option value="11" parent="1">11</option>
-			<option value="131" parent="13">131</option>
-			<option value="132" parent="13">132</option>
-			<option value="2">2</option>
-			<option value="21" parent="2">21</option>
-			<option value="32" parent="3">32</option>
-			<option value="33" parent="3">33</option>
-			<option value="3">3</option>
-			<option value="31" parent="3">31</option>
-			<option value="22" parent="2">22</option>
-			<option value="133" parent="13">133</option>
-			<option value="23" parent="2">23</option>
-		</select>
-		<script type="text/javascript">
-			$(function() {
-				$("#test").select2tree();
-			});
-		</script>
-	</body>
+	<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<h3>
+				select2tree 例子Demo
+			</h3>
+			<p>
+				 功能属性基于<strong>select2</strong> （
+				 Functional attributes based on<strong>select2</strong> ）
+			</p>
+			<form role="form">
+				<div class="form-group">
+					 <label for="test">单选（Single select）</label>
+					 <select id="test" style="width: 50%;margin-left: 10%;" class="form-control">
+						<option >unSelect</option>
+						<option value="12" parent="1">12</option>
+						<option value="1">1</option>
+						<option value="13" parent="1">13</option>
+						<option value="11" parent="1">11</option>
+						<option value="131" parent="13">131</option>
+						<option value="132" parent="13">132</option>
+						<option value="2">2</option>
+						<option value="21" parent="2">21</option>
+						<option value="32" parent="3">32</option>
+						<option value="33" parent="3">33</option>
+						<option value="3">3</option>
+						<option value="31" parent="3">31</option>
+						<option value="22" parent="2">22</option>
+						<option value="133" parent="13">133</option>
+						<option value="23" parent="2">23</option>
+					</select>
+				</div>
+				<div class="form-group">
+					 <label for="testMultiple">多选（Multiple select）</label>
+					<select id="testMultiple" style="width: 50%;margin-left: 10%;" multiple="multiple">
+						<option >unSelect</option>
+						<option value="12" parent="1">12</option>
+						<option value="1">1</option>
+						<option value="13" parent="1">13</option>
+						<option value="11" parent="1">11</option>
+						<option value="131" parent="13">131</option>
+						<option value="132" parent="13">132</option>
+						<option value="2">2</option>
+						<option value="21" parent="2">21</option>
+						<option value="32" parent="3">32</option>
+						<option value="33" parent="3">33</option>
+						<option value="3">3</option>
+						<option value="31" parent="3">31</option>
+						<option value="22" parent="2">22</option>
+						<option value="133" parent="13">133</option>
+						<option value="23" parent="2">23</option>
+					</select>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+	<script type="text/javascript">
+		$(function() {
+			$("#test").select2tree();
+			$("#testMultiple").select2tree();
+		});
+	</script>
+</body>
 
 </html>
