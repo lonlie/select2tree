@@ -96,6 +96,35 @@
 			$(".switch").mouseup(function() {
 				return false;
 			});
+			
+			//Expand the selected values to radio mode only
+			$(".select2-selection").off("mouseup");
+			$(".select2-selection").mouseup(function () {
+			    var ariaowns = $(this).attr('aria-owns');
+			    if (!ariaowns || ariaowns == null) return; 
+			    var selectid = ariaowns.split('-')[1];
+			    //get current value
+			    var val = $('#' + selectid).val();
+			
+			    if (val == '' || val == null || !val || val.indexOf(',') > 0) return;
+			
+			    var pval = [];
+			    do {
+			        var p = $('#' + selectid + ' option[value=' + val + ']').attr('parent');
+			        if (p == '' || !p)
+			            break;
+			        pval.push(p);
+			        val = p;
+			    } while (true)
+			
+			    if (pval.length > 0) {
+			        for (var i in pval.reverse()) {
+			            switchAction(pval[i], true);
+			        }
+			    }
+			    event.stopPropagation();
+			});
+			
 		}, 0);
 	}
 })(jQuery);
