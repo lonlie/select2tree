@@ -1,8 +1,6 @@
 # select2tree
 extend select2 for treeview. 扩展select2，使它可以树形展示，可以缩放。
 
-<a href="http://runjs.cn/detail/bezljwvl" target="_blank">See demo</a>
-
 # 使用方法
 * 与select2用法一致，只是在使用时$('select').select2()变成了$('select').select2tree()。
 * option标签中指定parent属性即可实现树形展示，支持数据源乱序，展示下拉选项时将自动排序。
@@ -14,8 +12,8 @@ This is plugin for tree representation select2's dropdown. It allows any levels 
 Parent option should be referenced in children via ``parent`` attribute. You should set it like parent's ``value`` attribute - ``parent="parent_value_attribute"``.
 
 ### Example
+![image](https://github.com/blackWins/select2tree/assets/34080651/93299959-bcad-436d-a781-b0a1e9d11a38)
 
-[Look at demo](http://runjs.cn/detail/bezljwvl)
 
 This files are required for correct working:
 ```
@@ -55,8 +53,6 @@ If you want to apply some values at the begining, use select2's event triggering
 Связывание дочернего ``<option>`` с родительским происходит через аттрибуты ``val`` и ``parent`` - у дочернего элемента должен быть указан ``parent="parent_value_attribute"``.
 
 ### Пример использования
-
-[Посмотреть демо](http://runjs.cn/detail/bezljwvl)
 
 Минимально необходимые файлы для работы плагина:
 
