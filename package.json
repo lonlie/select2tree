@@ -1,0 +1,24 @@
+{
+  "name": "select2tree",
+  "version": "1.0.0",
+  "description": "extend select2 for treeview",
+  "main": "select2tree.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackWins/select2tree.git"
+  },
+  "keywords": [
+    "select2tree",
+	"select2",
+	"tree"
+  ],
+  "author": "blackwinds",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blackWins/select2tree/issues"
+  },
+  "homepage": "https://github.com/blackWins/select2tree#readme"
+}
